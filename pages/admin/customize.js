@@ -1,6 +1,6 @@
 import { useState, useContext, useEffect } from "react";
 import { Row, Col, Input, Button, Image, Divider } from "antd";
-import Media from "../../components/Media";
+import Media from "../../components/Media/index";
 import { MediaContext } from "../../context/media";
 import axios from "axios";
 import toast from "react-hot-toast";
