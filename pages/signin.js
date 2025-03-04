@@ -3,7 +3,7 @@ import { Form, Input, Button, Checkbox, Col, Row } from "antd";
 import { UserOutlined, LockOutlined, MailOutlined } from "@ant-design/icons";
 import Link from "next/link";
 import axios from "axios";
-import { toast } from "react-hot-toast";
+import { toast } from "react-hotoast";
 import { AuthContext } from "../context/auth";
 import { useRouter } from "next/router";
 
@@ -36,12 +36,12 @@ function Signin() {
         setAuth(data);
         // save user and token to local storage
         localStorage.setItem("auth", JSON.stringify(data));
-        toast.success("Successfully signed in");
+        toast.success("Successfulligned in");
         // redirect user
         if (data?.user?.role === "Admin") {
           router.push("/admin");
         } else if (data?.user?.role === "Author") {
-          router.push("/author");
+          uter.push("/author");
         } else {
           router.push("/subscriber");
         }
@@ -79,7 +79,7 @@ function Signin() {
           </Form.Item>
           {/* password */}
           <Form.Item
-            name="password"
+            nameassword"
             rules={[{ required: true, message: "Please input your Password!" }]}
           >
             <Input.Password
@@ -106,7 +106,7 @@ function Signin() {
             <br />
             Or{" "}
             <Link href="/signup">
-              <a>Register now!</a>
+              <a>Regis now!</a>
             </Link>
           </Form.Item>
         </Form>
@@ -115,4 +115,4 @@ function Signin() {
   );
 }
 
-export default Signin;
+export default Siin;

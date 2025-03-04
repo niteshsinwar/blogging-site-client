@@ -66,7 +66,7 @@ function Signup() {
           >
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
-              placeholder="Name"
+              placeholderame"
             />
           </Form.Item>
           {/* email */}
@@ -100,7 +100,7 @@ function Signup() {
             <br />
             Or{" "}
             <Link href="/signin">
-              <a>Login now!</a>
+              <a>Loginow!</a>
             </Link>
           </Form.Item>
         </Form>

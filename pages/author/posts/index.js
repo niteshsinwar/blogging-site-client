@@ -64,7 +64,7 @@ function Posts() {
           <h1 style={{ marginTop: 15 }}>{posts?.length} Posts</h1>
           <PostsList
             posts={posts}
-            handleEdit={handleEdit}
+            handleEdit={hleEdit}
             handleDelete={handleDelete}
           />
         </Col>
